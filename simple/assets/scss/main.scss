@@ -1,0 +1,41 @@
+
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+.box{
+	margin:0 auto;
+	width: 302px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 3px;
+	box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+	.item{	
+		display: block;
+		cursor: pointer;
+		input{
+			display: none;
+			&:checked ~ label{
+				background-color: #fff;
+				border: none;
+			}
+		}
+		label{
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-color: #DE4738;
+			border: 1px solid #E24E3F;
+			cursor: pointer;
+			
+		}		
+	}
+}
